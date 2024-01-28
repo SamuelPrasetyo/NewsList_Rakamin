@@ -66,15 +66,34 @@
         android:textStyle="bold"
         android:textColor="@color/royal_blue"/>
 
+    <ImageView
+        android:id="@+id/ic_author"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/title_headlines"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="-30dp"
+        android:src="@drawable/ic_person" />
+
     <TextView
         android:id="@+id/author_headlines"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/title_headlines"
         android:layout_marginTop="10dp"
+        android:layout_marginLeft="24dp"
         android:text="Author_Headlines"
         android:textSize="8pt"
         android:textColor="@color/royal_blue"/>
+
+    <ImageView
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_below="@id/title_headlines"
+        android:layout_alignLeft="@+id/publish_date_headlines"
+        android:layout_marginLeft="-24dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_date" />
 
     <TextView
         android:id="@+id/publish_date_headlines"
