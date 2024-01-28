@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.newslist_rakamin"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.newslist_rakamin"
@@ -47,6 +47,9 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    viewBinding {
+        enable = true
+    }
 }
 
 dependencies {
@@ -66,4 +69,18 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    // Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.5.0")
+    // GSON
+    implementation("com.squareup.retrofit2:converter-gson:2.5.0")
+    // Recycle View
+    implementation("androidx.recyclerview:recyclerview:1.2.0-alpha02")
+    // Picasso
+    implementation ("com.squareup.picasso:picasso:2.71828")
+
+
+    implementation("androidx.cardview:cardview:1.0.0")
+    implementation("com.google.android.material:material:1.2.0-alpha05")
+    implementation("com.google.android.material:material:1.10.0")
 }
