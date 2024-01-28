@@ -12,6 +12,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.newslist_rakamin.databinding.ActivityMainBinding
 import com.example.newslist_rakamin.ui.theme.NewsList_RakaminTheme
 import com.squareup.picasso.Picasso
 import retrofit2.Call
